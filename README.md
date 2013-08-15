@@ -16,7 +16,7 @@ Include the module and run
 ```javascript
 var tocsv = require('tocsv');
     
-toocsv({data: someJSONData, fields: ['field1', 'field2', 'field3']}, function(err, csv) {
+tocsv({data: someJSONData, fields: ['field1', 'field2', 'field3']}, function(err, csv) {
   if (err) console.log(err);
   console.log(csv);
 });
@@ -54,7 +54,7 @@ var json = [
   }
 ];
 
-json2csv({data: json, fields: ['car', 'price', 'color']}, function(err, csv) {
+tocsv({data: json, fields: ['car', 'price', 'color']}, function(err, csv) {
   if (err) console.log(err);
   fs.writeFile('file.csv', csv, function(err) {
     if (err) throw err;
@@ -120,7 +120,7 @@ If no delimiter is specified, the default `,` is used
 You can choose custom column names for the exported file.
 
 ```javascript
-json2csv({data: json, fields: [ { name:'car', label:'Car Name'}, { name:'price','Price USD' } ] }, function(err, csv) {
+tocsv({data: json, fields: [ { name:'car', label:'Car Name'}, { name:'price','Price USD' } ] }, function(err, csv) {
   if (err) console.log(err);
   console.log(csv);
 });
@@ -137,7 +137,7 @@ Results in
 
     
 ## License
-Copyright (C) 2013 [Robin Cloud](mailto: dio.paper@gmail.com)
+Copyright (C) 2013 [Robin Cloud](mailto: dio.paper@gmail.com) 
 Copyright (C) 2012 [Mirco Zeiss](mailto: mirco.zeiss@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
