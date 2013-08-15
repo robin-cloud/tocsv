@@ -1,0 +1,36 @@
+{
+  "name": "tocsv",
+  "preferGlobal": "true",
+  "version": "0.0.1",
+  "description": "Easy convert json to csv",
+  "keywords": [
+    "json",
+    "csv",
+    "export",
+    "convert",
+    "parse"
+  ],
+  "author": "Robin Cloud <dio.paper@gmail.com>",
+  "main": "./lib/tocsv.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robin-cloud/tocsv"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "should": "~1.2.1",
+    "async": "~0.2.6"
+  },
+  "bugs": {
+    "url": "https://github.com/robin-cloud/tocsv/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "license": "BSD"
+}
