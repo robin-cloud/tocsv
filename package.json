@@ -1,7 +1,7 @@
 {
   "name": "tocsv",
   "preferGlobal": "true",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy convert json to csv",
   "keywords": [
     "json",
